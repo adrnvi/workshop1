@@ -101,6 +101,7 @@ header .mainNavigation ul li a {
     color: #fff;
     text-transform: uppercase;
     font-size: 15px;
+    padding: 0 15px 0 15px;
 }
 
 header .mainNavigation ul li a:hover {
