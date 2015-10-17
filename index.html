@@ -12,6 +12,10 @@
 
     <meta name="viewport" content="width=device-width"/>
 
+    <script src="js/jquery-2.1.4.js"></script>
+
+    <script src="js/script.js"></script>
+
 </head>
 
 
@@ -30,9 +34,16 @@
 
         <nav class="mainNavigation">
 
-            <ul>
+            <ul class="firstLevel">
 
-                <li><a href="#">o firmie</a></li>
+                <li><a href="#">o firmie</a>
+                    <ul class="secondLevel">
+                        <li><a href="#">Aktualności</a></li>
+                        <li><a href="#">Nasz team</a></li>
+                        <li><a href="#">Historia</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="#">galeria</a></li>
                 <li><a href="#">kontakt</a></li>
 
@@ -50,9 +61,16 @@
 
     <div class="container clearfix">
 
-        <span class="leftArrow">&lsaquo;</span>
+        <button class="leftArrow">&lsaquo;</button>
 
-        <div class="focusImg"><img src="img/black_chair.png"></div>
+        <div class="focusImg slider">
+            <ul>
+                <li><img src="img/black_chair.png"></li>
+                <li><img src="img/orange.png"></li>
+                <li><img src="img/red_chair.png"></li>
+            </ul>
+
+        </div>
 
         <div class="focusText">
 
@@ -67,7 +85,7 @@
 
         </div>
 
-        <span class="rightArrow">&rsaquo;</span>
+        <button class="rightArrow">&rsaquo;</button>
 
     </div>
 

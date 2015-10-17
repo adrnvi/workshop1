@@ -61,6 +61,7 @@ html,body {
 header {
     background-color: #000;
     height: 40px;
+    z-index: 5;
 }
 
 header .branding {
@@ -88,28 +89,41 @@ header .mainNavigation {
 
 header .mainNavigation ul {
     list-style-type: none;
+    text-align: center;
+
 }
 
 header .mainNavigation ul li {
     float: left;
-    margin: 0 20px 0 20px;
     line-height: 40px;
+    width: 115px;
 }
 
 header .mainNavigation ul li a {
     display: block;
+    width: 115px;
     color: #fff;
+    background-color: #000;
     text-transform: uppercase;
     font-size: 15px;
-    padding: 0 15px 0 15px;
 }
 
 header .mainNavigation ul li a:hover {
     display: block;
     color: #000;
-    background-color: #fafafa;
+    background-color: #fafafa
 }
 
+ul.firstLevel li:first-child {
+    position: relative;
+}
+
+ul.secondLevel {
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+}
 
 /* styles for focus section */
 
@@ -118,7 +132,7 @@ section.focus {
     background: -moz-linear-gradient(to bottom, #fafafa, #cbcfd4);
     background: linear-gradient(to bottom, #fafafa, #cbcfd4);
     padding-bottom: 20px;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 .focusImg {
@@ -130,6 +144,7 @@ section.focus {
 .focusImg img {
     width: 100%;
     height: auto;
+
 }
 
 .focusText {
@@ -166,22 +181,39 @@ section.focus {
     position: relative;
 }
 
-.focus span.leftArrow {
-    font-size: 110px;
+.focus button.leftArrow {
+    font-size: 120px;
     color: #26c7a9;
     position: absolute;
-    top: 25%;
-    left: 5px;
-
+    top: 20%;
+    left: 0px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
 }
 
-.focus span.rightArrow {
-    font-size: 110px;
+.focus button.rightArrow {
+    font-size: 120px;
     color: #26c7a9;
     position: absolute;
-    top: 25%;
-    right: 10px;
+    top: 20%;
+    right: 0px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
 }
+
+/* slider */
+
+.slider ul {
+    list-style-type: none;
+}
+
+.slider li {
+    display: none;
+    width: 470px;
+    height: 337px;
+}
+
+
 
 
 
@@ -193,6 +225,30 @@ section.focus {
     padding-top: 20px;
 }
 
+
+.grid1 {
+    float: left;
+    width: calc(33.33% - 5px);
+    margin: 0 5px 0 0;
+    position: relative;
+}
+
+.grid2 {
+    float: left;
+    width: calc(33.33% - 5px);
+    margin: 0 2.5px 0 2.5px;
+    position: relative;
+}
+
+.grid3 {
+    float: left;
+    width: calc(33.33% - 5px);
+    margin: 0 0 0 5px;
+    position: relative;
+}
+
+
+/*
 .grid1 {
     float: left;
     width: 313px;
@@ -213,7 +269,7 @@ section.focus {
     margin: 0 0px 0 5px;
     position: relative;
 }
-
+*/
 .grid1 img, .grid2 img, .grid3 img {
     width: 100%;
     height: auto;
