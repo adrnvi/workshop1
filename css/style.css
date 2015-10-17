@@ -131,13 +131,13 @@ ul.secondLevel {
 section.focus {
     background: -moz-linear-gradient(to bottom, #fafafa, #cbcfd4);
     background: linear-gradient(to bottom, #fafafa, #cbcfd4);
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     padding-top: 80px;
 }
 
 .focusImg {
     float: left;
-    width: 480px;
+    width: 550px;
     margin: 0 0 0 15px;
 }
 
@@ -150,7 +150,7 @@ section.focus {
 .focusText {
     text-align: center;
     float: left;
-    width: 440px;
+    width: 370px;
     font-size: 14px;
     position: relative;
     top: 50px;
