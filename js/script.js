@@ -8,15 +8,17 @@ $(document).ready(function(){
 
 
     //for menu
-    var firstMenuElement = $(".firstLevel li");
+    var firstMenuElement = $("li.firstLevel");
     var dropdown = $("ul.secondLevel");
-    var firstLevel = $("ul.firstLevel");
+    //var firstLevel = $(".firstLevel");
+
+    console.log(firstMenuElement);
 
     firstMenuElement.eq(0).on("mouseenter", function(event){
         dropdown.css("display", "block");
     });
 
-    firstLevel.on("mouseleave", function(event){
+    firstMenuElement.on("mouseleave", function(event){
         dropdown.css("display", "none");
     });
 
