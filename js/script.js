@@ -10,7 +10,6 @@ $(document).ready(function(){
     //for menu
     var firstMenuElement = $("li.firstLevel");
     var dropdown = $("ul.secondLevel");
-    //var firstLevel = $(".firstLevel");
 
     console.log(firstMenuElement);
 
