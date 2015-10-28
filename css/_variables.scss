@@ -1,19 +1,18 @@
 
 
-$mainColor: #757575;
-
-$mainBrandColor: #26c7a9;
-
-$lightFocusColor: #cbcfd4;
-
-$darkFocusColor: darkgrey;
-
-$headerColor: #000;
-
-$whiteColor: #fff;
 
 $myContainer: 960px;
 
-$allMyHeaders: (
-
+$myColors: (
+    main: #757575,
+    brand: #26c7a9,
+    focus: #cbcfd4,
+    darkFocus: darkgrey,
+    header: #000,
+    white: #fff,
+    gradientLight: #fafafa,
+    lightGrey: lightgrey,
+    veryLightGrey: #f0f0f0,
+    transparent: rgba(255, 255, 255, 0),
+    semiTransparent: rgba(255, 255, 255, 0.5)
 );

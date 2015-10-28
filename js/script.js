@@ -11,7 +11,6 @@ $(document).ready(function(){
     var firstMenuElement = $("li.firstLevel");
     var dropdown = $("ul.secondLevel");
 
-    console.log(firstMenuElement);
 
     firstMenuElement.eq(0).on("mouseenter", function(event){
         dropdown.css("display", "block");
@@ -68,6 +67,55 @@ $(document).ready(function(){
         }
         images.eq(visibleImage).show(0);
     });
+
+    //for form
+
+    var rodzaj = $("#rodzaj");
+    var kolor = $("#kolor");
+    var material = $("#material");
+
+
+    var price = $("#price");
+    var chair = $("#chair");
+    var color = $("#color");
+    var colorPrice = $("#colorPrice");
+    var fabric = $("#fabric");
+    var fabricPrice = $("#fabricPrice");
+    var transportOption = $("input[type='checkbox']");
+    var transport = $("#transport");
+    var transportPrice = $("#transportPrice");
+
+    console.log(transportOption)
+
+
+    rodzaj.on("change", function(event) {
+        var rodzajValue = $(this).val();
+        var rodzajName = $(this).find("option:selected").text();
+        chair.html(rodzajName);
+        price.html(rodzajValue);
+    });
+
+    kolor.on("change", function(event) {
+        var colorValue = $(this).val();
+        var colorName = $(this).find("option:selected").text();
+        color.html(colorName);
+        colorPrice.html(colorValue);
+    });
+
+    material.on("change", function(event) {
+        var fabricValue = $(this).val();
+        var fabricName = $(this).find("option:selected").text();
+        fabric.html(fabricName);
+        fabricPrice.html(fabricValue);
+    });
+
+    transportOption.on("change", function(event){
+            var transportValue = $(this).val();
+        if($(this).checked) {
+            transportPrice.html(transportValue);
+        }
+    });
+
 
 
 

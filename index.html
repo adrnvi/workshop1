@@ -12,7 +12,7 @@
 
     <!-- <link rel="stylesheet" href="css/style2.css"> -->
 
-    <meta name="viewport" content="width=device-width"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <script src="js/jquery-2.1.4.js"></script>
 
@@ -157,6 +157,92 @@
             <p class="feature3">Gwarancja 6 lat</p>
             <p class="feature4">Porady Projektanta</p>
             <button>dołącz</button>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="compose">
+
+    <div class="container clearfix">
+
+        <div class="grid1">
+
+            <h2>Skomponuje swoje krzesło</h2>
+
+            <form>
+
+                <select name="rodzaj" id="rodzaj">
+                    <option value="0" selected>Wybierz rodzaj</option>
+                    <option value="2400">Clair</option>
+                    <option value="2800">Margarita</option>
+                    <option value="3200">Selena</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <select name="kolor" id="kolor">
+                    <option value=" " selected>Wybierz kolor</option>
+                    <option value="0">Czerwony</option>
+                    <option value="0">Czarny</option>
+                    <option value="0">Pomarańczowy</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <select name="material" id="material">
+                    <option value="300">Tkanina</option>
+                    <option value="600">Skóra</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <input type="checkbox" id="transportOption" value="200">
+
+            </form>
+
+        </div>
+
+        <div class="grid2">
+
+            <img src="img/red_chair.png">
+
+        </div>
+
+        <div class="grid3 right">
+
+            <h2 class="summary">Podsumowanie</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th id="chair">Twój fotel</th>
+                        <th id="price"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="color">Kolor</td>
+                        <td id="colorPrice"></td>
+                    </tr>
+                    <tr>
+                        <td id="fabric"></td>
+                        <td id="fabricPrice"></td>
+                    </tr>
+                    <tr>
+                        <td id="transport"></td>
+                        <td id="transportPrice"></td>
+                    </tr>
+                    <tr>
+                        <td id="sum">Suma</td>
+                        <td id="sumPrice"></td>
+                    </tr>
+                </tbody>
+
+            </table>
+
         </div>
 
     </div>
